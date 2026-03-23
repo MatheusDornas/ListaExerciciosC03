@@ -25,7 +25,7 @@ float S(void){
         }
         soma += (1.0/fat);
     }
-    printf("%.2f", soma);
+    printf("%f", soma);
 }
 
 int main(){

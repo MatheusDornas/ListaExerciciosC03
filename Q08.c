@@ -8,19 +8,22 @@ Faça um programa que leia N e imprima o valor retornado pela função.
 #include <stdio.h>
 #include <math.h>
 
-float parametro(void) {
+double parametro(void) {
     int N, i;
-    float S;
+    double S=0;
 
     scanf("%d", &N);
 
     for(i=1; i<=N; i++)
     {
-        S += (pow(i,2)+1)/(i+3);
+        S += ((pow(i,2))+1)/(i+3);
     }
-    printf("%f", S);
+    
+    return S;
 }
 
 int main(){
-    parametro();
+
+    printf("%lf", parametro());
+    
 }

@@ -9,17 +9,17 @@ deve ser um flag com salário negativo). Faça um programa que acione o procedim
 
 float mediasalario(void) {
 
-    int count=0;
+    int count=0, filhos;
     float media, totsal=0, salario=0;
 
-    while (scanf("%f %d", &salario) && salario>=0)
+    while (scanf("%f %d", &salario, &filhos) && salario>=0)
     {
         totsal += salario;
         count ++;
     }
     media = totsal/count;
     
-    printf("%.2f", media);
+    printf("%.2f\n", media);
 }
 
 

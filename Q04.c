@@ -17,7 +17,7 @@ dos 3 lados) e para cada triângulo, acione o procedimento.
 float trig(void) {
     float X, Y, Z;
 
-    while(scanf("%f %f %f", &X, &Y, &Z) && X>0)
+    while(scanf("%f %f %f", &X, &Y, &Z) && X>=0 && Y>=0 && Z>=0)
     {
         if (X+Y > Z && X+Z > Y && Y+Z > X)
         {

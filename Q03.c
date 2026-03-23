@@ -30,7 +30,7 @@ int valores(void){
         n2 = n3;
         n3 = extra;
     }
-    printf("%d %d %d\n\n", n1, n2, n3);
+    printf("%d %d %d\n", n1, n2, n3);
     }
 
 int main()
